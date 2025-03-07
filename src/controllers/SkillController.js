@@ -1,9 +1,9 @@
 /** @format */
 
-import { SkillModel } from '../models/skillModel.js';
 import asyncHandler from 'express-async-handler';
 import { createError } from 'http-errors-enhanced';
 import { uploadToCloudinary } from '../utils/CloudinaryWrapper.js';
+import { SkillModel } from '../models/SkillModel.js';
 const createSkill = asyncHandler(async (req, res, next) => {
   const { SkillIcon } = req.files;
   const { title, proficiency } = req.body;
