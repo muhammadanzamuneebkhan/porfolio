@@ -21,7 +21,7 @@ const cache = apicache.middleware;
 const corsOptions = {
   origin: [
     'https://effortless-pony-db3ed5.netlify.app',
-    'https://endearing-blancmange-8702a5.netlify.app',
+    'https://gleeful-bonbon-1d1abf.netlify.app/',
   ],
   credentials: true,
   optionsSuccessStatus: 200,
