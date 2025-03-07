@@ -8,12 +8,12 @@ const generateTokenAndSetCookie = (res, userId) => {
   res.cookie('accessToken', token, {
     httpOnly: true,
     secure: true,
-    sameSite: 'strict',
+    sameSite: 'None',
     maxAge: 7 * 24 * 60 * 60 * 1000,
   });
   res.cookie('is_auth', true, {
     httpOnly: false,
-    sameSite: 'strict',
+    sameSite: 'None',
     maxAge: 7 * 24 * 60 * 60 * 1000,
   });
 };
