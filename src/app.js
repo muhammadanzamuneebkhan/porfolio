@@ -19,7 +19,10 @@ export const app = express();
 // Initialize apicache
 const cache = apicache.middleware;
 const corsOptions = {
-  origin: [process.env.CLIENT_URL, process.env.CLIENT_URL2],
+  origin: [
+    'https://effortless-pony-db3ed5.netlify.app',
+    'https://endearing-blancmange-8702a5.netlify.app',
+  ],
   credentials: true,
   optionsSuccessStatus: 200,
 };
